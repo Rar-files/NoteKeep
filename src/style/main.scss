@@ -1,0 +1,94 @@
+@import './Colors/App.scss';
+@import './Colors/Palette.scss';
+@import './note.scss';
+
+html,
+body {
+  height: 100%;
+  margin: 1;
+}
+
+body{
+    background-color: $Background;
+    color: $Text;
+}
+
+.Content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Title{
+    padding: 4px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+
+.Logo{
+    width: 50px;
+}
+
+.RootTitle{
+    margin: 5px;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.NoteRoot{
+    padding: 2px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    scrollbar-width: 0;
+}
+
+.Pined{
+    background-color: $Comment;
+}
+
+.addBtn{
+    background: none;
+    border: none;
+    img{
+        margin: 10px;
+        height: 36px;
+        cursor: pointer;
+    }
+}
+
+.PalleteOfColors{
+    padding: 10px;
+    width: 132px;
+    height: 90px;
+    position: fixed;
+    border-color: $Accent;
+    border-width: 1px;
+    border-style: solid;
+    background-color: $Comment;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    div{ 
+        margin: 3px;
+        padding: 10px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+
+.invisible{
+    display: none;
+}
